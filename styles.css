@@ -1,7 +1,7 @@
 :root {
    --bg-color: #1d809f;
    --secondary: #343a40;
-   --tertiary: #ecb807;
+   --tertiary: #ecb804;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 .hero {
    background: url(resources/images/bg-masthead.jpg) no-repeat;
    background-position: center;
-   height: 700px;
+   height: 400px;
    padding: 2rem;
 }
 
@@ -51,7 +51,7 @@ button {
 /* INTRO STYLING */
 .intro {
    padding: 2rem;
-   height: 700px;
+   height: 400px;
 }
 
 .heading-3 {
@@ -86,9 +86,13 @@ a {
 }
 
 .services > div > div {
+   width: 300px;
+}
+
+.services > div > div > div {
    background-color: white;
-   width: 7rem;
-   height: 7rem;
+   width: 4rem;
+   height: 4rem;
    margin: auto;
    border-radius: 50%;
    margin-bottom: 1.5rem;
@@ -111,7 +115,7 @@ a {
    background: url(resources/images/bg-callout.jpg) no-repeat;
    background-position: top;
    background-size: cover;
-   height: 700px;
+   height: 400px;
 }
 
 .welcome p {
@@ -123,34 +127,40 @@ a {
    padding: 100px 1rem;
 }
 
-li div {
-   height: 250px;
+li {
+   height: 300px;
    padding: 2rem;
    display: flex;
    flex-direction: column;
    justify-content: end;
+   
 }
 
 .stationary {
-   background: url(resources/images/portfolio-1.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
+   background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(resources/images/portfolio-1.jpg);
 }
 
 .ice-cream {
-   background: url(resources/images/portfolio-2.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
+   background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(resources/images/portfolio-2.jpg);
 }
 
 .strawberries {
-   background: url(resources/images/portfolio-3.jpg) no-repeat;
-   background-size: cover;
-   background-position: center;
+   background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(resources/images/portfolio-3.jpg);
 }
 
 .workspace {
-   background: url(resources/images/portfolio-4.jpg) no-repeat;
+   background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(resources/images/portfolio-4.jpg);
+}
+
+.stationary, .ice-cream, .strawberries, .workspace {
    background-size: cover;
    background-position: center;
 }
@@ -200,4 +210,10 @@ footer {
    width: 2.5rem;
    height: 2.5rem;
    border-radius: 5px;
+}
+
+@media (min-width: 1200px) {
+   li div {
+      width: 500px;
+   }
 }
